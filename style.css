@@ -1,4 +1,3 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -76,12 +75,12 @@ body {
   transition: background 0.2s ease;
 }
 
-/* Hover effect */
+/* Hovering*/
 .emoji a:hover {
   background-color: #5d2f9d;
 }
 
-/* Responsive */
+/* to make it responsive */
 @media (max-width: 900px) {
   .emojis {
     grid-template-columns: 1fr;
