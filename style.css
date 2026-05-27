@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+  padding: 30px 40px;
+  color: #111;
+}
+
+/* Hide heading like screenshot */
+.siteheader {
+  display: none;
+}
+
+/* Grid layout */
+.emojis {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* Card styling */
+.emoji {
+  background: #f5f5f5;
+  border: 2px solid #8a8a8a;
+  border-radius: 14px;
+  padding: 24px;
+  position: relative;
+  min-height: 470px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Emoji icon */
+.icon {
+  font-size: 72px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.emoji h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border-bottom: 3px solid #d0d0d0;
+  padding-bottom: 8px;
+}
+
+/* Description */
+.emoji p {
+  font-size: 19px;
+  line-height: 1.35;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* Purple button */
+.emoji a {
+  margin-top: auto;
+  text-decoration: none;
+  background-color: #6f3eb3;
+  color: white;
+  font-size: 18px;
+  padding: 18px 24px;
+  border-radius: 10px;
+  display: block;
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+/* Hover effect */
+.emoji a:hover {
+  background-color: #5d2f9d;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .emojis {
+    grid-template-columns: 1fr;
+  }
+}
